@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+body.dark-theme .container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+body.dark-theme .card {
+  background-color: #242424;
+}
+
+.card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.dark-theme .card h2 {
+  color: #fff;
+}
+
+.card h2 img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group textarea {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fafafa;
+  resize: none;
+  color: #333;
+}
+
+body.dark-theme .form-group textarea {
+  background: #2c2c2c;
+  border: 1px solid #444;
+  color: #f1f1f1;
+}
+
+#authors-toggle {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+body.dark-theme #authors-toggle {
+  color: #57a6ff;
+}
+
+.authors-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.authors-list.active {
+  max-height: 100px;
+}
+
+.authors-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+body.dark-theme .authors-list a {
+  color: #57a6ff;
+}
+
+.authors-list a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+body.dark-theme button {
+  background: #1a73e8;
+}
+
+body.dark-theme button:hover {
+  background: #185abc;
+}
+
+.theme-toggle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.theme-toggle button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+body.dark-theme .theme-toggle button {
+  color: #f1f1f1;
+}
+
+.theme-toggle button:hover {
+  color: #007bff;
+}
+
+body.dark-theme .theme-toggle button:hover {
+  color: #57a6ff;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.custom-swal-popup {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .custom-swal-popup {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.custom-swal-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+body.dark-theme .custom-swal-title {
+  color: #f1f1f1;
+}
+
+.custom-swal-content {
+  font-size: 16px;
+  color: #666;
+}
+
+body.dark-theme .custom-swal-content {
+  color: #cfcfcf;
+}
+
+.custom-swal-footer {
+  font-size: 14px;
+}
+
+.custom-swal-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+body.dark-theme .custom-swal-footer a {
+  color: #57a6ff;
+}
+
+.custom-swal-footer a:hover {
+  text-decoration: underline;
+}
+
+.custom-swal-confirm-button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.custom-swal-confirm-button:hover {
+  background-color: #0056b3;
+}
+
+body.dark-theme .custom-swal-confirm-button {
+  background-color: #1a73e8;
+}
+
+body.dark-theme .custom-swal-confirm-button:hover {
+  background-color: #185abc;
+}

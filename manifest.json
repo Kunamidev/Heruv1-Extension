@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Heru Extension",
+  "version": "1.0.1",
+  "description": "Import/Export 'fbstate.json and Cookie' Developed by Kaguya Team",
+  "author": "Kaguya Team",
+  "icons": {
+    "16": "https://b.top4top.io/p_32501q5k55.jpg",
+    "48": "https://b.top4top.io/p_32501q5k55.jpg",
+    "128": "https://b.top4top.io/p_32501q5k55.jpg"
+},
+  "action": {
+    "default_title": "Heru Extension",
+    "default_popup": "index.html",
+    "default_icon": {
+        "16": "https://b.top4top.io/p_32501q5k55.jpg",
+        "24": "https://b.top4top.io/p_32501q5k55.jpg",
+        "32": "https://b.top4top.io/p_32501q5k55.jpg"
+    }
+  },
+  "host_permissions": [
+    "*://*.facebook.com/"
+  ],
+  "permissions": ["cookies", "scripting", "tabs", "storage", "alarms", "notifications"]
+  
+}
